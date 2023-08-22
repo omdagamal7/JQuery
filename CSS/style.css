@@ -85,6 +85,7 @@ nav a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  z-index: 55;
 }
 #counter .layer {
   width: 100%;

@@ -7,10 +7,9 @@ $("#close").click(()=> {
   $("#nav").animate({left:`-${width}`},700)
 })
 
-
-$(".singer").click(function () {
-  $(this).children('p').slideToggle(); 
-  $(this).siblings().children('p').slideUp();
+$(".singer h2").click(function () {
+  $(this).next("p").slideDown(); 
+  $(this).parent().siblings().children('p').slideUp();
 });
 
 let counterDownDate = new Date("Dec 31,2025 23:59:59").getTime()
@@ -46,4 +45,3 @@ $("#message").on("keyup", function () {
     }
 }
 )
-

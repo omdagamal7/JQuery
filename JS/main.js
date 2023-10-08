@@ -9,7 +9,7 @@ $("#close").click(()=> {
 
 
 $(".singer h2").click(function () {
-  $(this).children('p').slideToggle(); 
+  $(this).next('p').slideToggle(); 
   $(this).parent().siblings().children('p').slideUp();
 });
 
